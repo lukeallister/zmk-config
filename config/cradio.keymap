@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht k1 LSHFT &ht LGUI k2  &ht LALT k3  &ht LCTRL k4
+#define HRML(k1,k2,k3,k4) &ht k1 LSHFT  &ht LGUI k2  &ht LALT k3  &ht LCTRL k4
 #define HRMR(k1,k2,k3,k4) &ht k1 RCTRL  &ht RALT k2  &ht RGUI k3  &ht RSHFT k4
 
 / {
@@ -38,7 +38,7 @@
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
+        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │          │
             HRML(A,        S,         D,         F)      &lt 4 G       &lt 5 H     HRMR(J,        K,         L,        SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
@@ -56,7 +56,7 @@
            &kp PSCRN  &trans      &kp UP    &trans     &trans         &kp STAR   &kp N7     &kp N8     &kp N9     &kp UNDER 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &LSHFT        &kp PLUS   &kp N4     &kp N5     &kp N6     &kp MINUS
+            &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LSHFT     &kp PLUS   &kp N4     &kp N5     &kp N6     &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans        &kp EQUAL  &kp N1     &kp N2     &kp N3     &kp RET
@@ -87,13 +87,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │          │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0   &trans     &kp HOME  &kp PGUP   &kp PGDN   &kp END   
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0   &trans     &kp HOME   &kp PGUP   &kp PGDN   &kp END   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │          │
-           &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans   &trans
+           &bootloader  &trans   &trans     &trans     &bt BT_SEL 1   &trans     &kp MINUS  &kp EQUAL  &kp LBRC   &kp RBRC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
+            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2   &trans     &kp BSLH   &kp PIPE     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
