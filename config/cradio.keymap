@@ -7,7 +7,7 @@
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LGUI k2  &ht LALT k3  &ht LCTRL k4
-#define HRMR(k1,k2,k3,k4) &ht RCTRL k1  &ht RALT k2  &ht RGUI k3  &ht RSHFT k4
+#define HRMR(k1,k2,k3,k4) &ht RCTRL k1  &ht LALT k2  &ht RGUI k3  &ht RSHFT k4
 
 / {
     behaviors {
@@ -53,7 +53,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp PSCRN  &trans      &kp UP    &trans     &trans         &kp STAR   &kp N7     &kp N8     &kp N9     &kp UNDER 
+           &kp PSCRN  &trans      &kp UP    &kp K_PASTE &kp K_COPY    &kp STAR   &kp N7     &kp N8     &kp N9     &kp UNDER 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LSHFT     &kp PLUS   &kp N4     &kp N5     &kp N6     &kp MINUS
@@ -70,13 +70,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &kp UP     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+           &kp TAB    &trans     &kp UP     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans         &trans     &trans     &trans     &trans     &kp BSPC
+           &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans         &trans     &kp UNDER  &kp PLUS   &trans     &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+           &trans     &trans     &trans     &trans     &trans         &trans     &kp SQT     &kp DQT   &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -90,7 +90,7 @@
            &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0   &trans     &kp HOME   &kp PGUP   &kp PGDN   &kp END   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │          │
-           &bootloader  &trans   &trans     &trans     &bt BT_SEL 1   &trans     &kp MINUS  &kp EQUAL  &kp LBRC   &kp RBRC
+           &bootloader  &trans   &trans     &trans     &bt BT_SEL 1   &trans     &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2   &trans     &kp BSLH   &kp PIPE     &trans     &trans
