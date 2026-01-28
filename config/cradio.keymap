@@ -70,10 +70,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp TAB    &trans     &kp UP     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+           &kp TAB    &trans     &kp UP     &trans     &trans         &trans     &kp TILDE  &kp GRAVE  &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans         &trans     &kp UNDER  &kp PLUS   &trans     &kp BSPC
+           &kp CAPS   &kp LEFT   &kp DOWN   &kp RIGHT  &trans         &trans     &kp UNDER  &kp PLUS   &trans     &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &trans     &trans     &trans     &trans     &trans         &trans     &kp SQT     &kp DQT   &trans     &trans
@@ -104,13 +104,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+           &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+           &kp F6     &kp F7     &kp F8     &kp F9     &kp F10        &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+           &kp F11    &kp F12     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
