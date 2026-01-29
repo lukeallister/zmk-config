@@ -59,7 +59,7 @@
             &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LSHFT     &kp PLUS   &kp N4     &kp N5     &kp N6     &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans        &kp EQUAL  &kp N1     &kp N2     &kp N3     &kp RET
+           &kp LC(TAB) &trans     &trans     &trans     &trans        &kp EQUAL  &kp N1     &kp N2     &kp N3     &kp RET
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans        &kp N0     &kp DOT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
